@@ -4,5 +4,39 @@
 {% endblock %}
 
 {% block body %} 
-<h1>Hi! I'm Yuri!</h1>
+<h1>Yuri Bot</h1>
+<h4>Coverts youtube (links or titles) to (video or audio) files</h4>
+<p>You can fill out either field, link for more concise results</p>
+<form action="/" method="POST">
+  <table>
+    <tr>
+      <td>
+        <label class="desc">Link:</label>
+      </td>
+      <td>
+        <input type="text" name="link">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label class="desc">Title:</label>
+      </td>
+      <td>
+        <input type="text" name="title">
+      </td>
+    </tr>
+  </table>
+
+  <div class="add_pad">
+    <label>video</label>
+    <input type="checkbox" name="video" value="video" checked>
+    
+    <label>audio</label>
+    <input type="checkbox" name="audio" value="audio">
+  </div>
+
+  <input type="submit"> 
+  
+</form>
+
 {% endblock %}
