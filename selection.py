@@ -1,15 +1,8 @@
-# template from a old code i wrote
-
 """
-
 from pytube import YouTube
 
-def selection(link):
+def selection(link, title, audio, video):
   tags = []
-  try:
-    yt = YouTube(link)
-  except:
-    return 1
 
   if options.lower() == "video" or options.lower() == "v":
     for i in yt.streams.filter(progressive=True):
@@ -38,5 +31,5 @@ def selection(link):
   else: 
     print("I don't understand...\n")
     selection(link)
-    
+
 """
